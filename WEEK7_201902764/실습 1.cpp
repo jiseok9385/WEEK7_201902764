@@ -11,7 +11,7 @@ private:
 
 int funcB() {
 	Test r('B');
-	// std::runtime_error("Exception from funcB!\n");
+	throw std::runtime_error("Exception from funcB!\n");
 	std::cout << "Executed in B" << std::endl;
 	return 0;
 }
